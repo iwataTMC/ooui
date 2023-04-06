@@ -5,7 +5,7 @@ interface Props {
   onTaskCompleted: (elapsedTime: number, errorCount: number) => void;
 }
 
-const TaskComponent: React.FC<Props> = ({ onTaskCompleted }) => {
+const ObjectComponent: React.FC<Props> = ({ onTaskCompleted }) => {
   const [startTime, setStartTime] = useState<number | null>(null);
   const [errorCount, setErrorCount] = useState(0);
   const { setResult } = useResult();
@@ -33,7 +33,7 @@ const TaskComponent: React.FC<Props> = ({ onTaskCompleted }) => {
     <div>
       {/* タスクを実行するためのUI要素 */}
       {/* エラー発生時にhandleErrorを呼び出し、タスク完了時にhandleTaskCompletedを呼び出すように設定 */}
-      <p>タスク指向UI</p>
+      <p>オブジェクト指向UI</p>
       <p>どのボタン？</p>
       <button>ボタン</button>
       <button>ボタン</button>
@@ -48,4 +48,4 @@ const TaskComponent: React.FC<Props> = ({ onTaskCompleted }) => {
   );
 };
 
-export default TaskComponent;
+export default ObjectComponent;
