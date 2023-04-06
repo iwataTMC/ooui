@@ -8,7 +8,7 @@ import Result from './Result';
 export default function App() {
   return (
     <Routes>
-      <Route path='/' element={<MainPage />} />
+      <Route path='/ooui' element={<MainPage />} />
       <Route path='/task' element={<TaskOriented />} />
       <Route path='/object' element={<ObjectOriented />} />
       <Route path='/result' element={<Result />} />
