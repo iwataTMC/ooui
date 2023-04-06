@@ -43,7 +43,7 @@ const TaskComponent: React.FC<Props> = ({ onTaskCompleted }) => {
       <button onClick={handleError}>ボタン</button>
       <button onClick={handleError}>ボタン</button>
       <br></br>
-      <button onClick={handleTaskCompleted}>ボタン</button>
+      <button onClick={handleTaskCompleted}>完了</button>
     </div>
   );
 };
