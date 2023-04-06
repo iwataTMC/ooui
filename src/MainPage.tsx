@@ -12,9 +12,16 @@ export default function MainPage() {
   return (
     <>
       <AppHeaderBar />
-      <Typography variant="h3">MainPage</Typography>
-      <Button variant="contained" onClick={() => navigate(`/${uuid}`)}>
-        NEW BOARD
+      <Typography variant='h3'>MainPage</Typography>
+      <br />
+      <Button variant='contained' onClick={() => navigate(`/task`)}>
+        TASK UI
+      </Button>
+      <br />
+      <br />
+      <br />
+      <Button variant='contained' onClick={() => navigate(`/object`)}>
+        OBJECT UI
       </Button>
       <br />
       <AppFooter />
